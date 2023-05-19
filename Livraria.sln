@@ -3,7 +3,33 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.API", "src\Livraria.API\Livraria.API.csproj", "{4C9195AD-02A7-4042-90DB-9EEAEA2987B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Domain", "src\Livraria.Domain\Livraria.Domain.csproj", "{0E9EAF27-5200-474E-8F57-CC0AC9032906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Livraria.Infrastructure", "src\Livraria.Infrastructure\Livraria.Infrastructure.csproj", "{DD0FEEC4-7091-42D6-99D6-8BB0BD860120}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{8541F664-120F-4ECF-BCAB-1D220F5ED41E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C9195AD-02A7-4042-90DB-9EEAEA2987B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C9195AD-02A7-4042-90DB-9EEAEA2987B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C9195AD-02A7-4042-90DB-9EEAEA2987B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C9195AD-02A7-4042-90DB-9EEAEA2987B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E9EAF27-5200-474E-8F57-CC0AC9032906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E9EAF27-5200-474E-8F57-CC0AC9032906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E9EAF27-5200-474E-8F57-CC0AC9032906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E9EAF27-5200-474E-8F57-CC0AC9032906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD0FEEC4-7091-42D6-99D6-8BB0BD860120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD0FEEC4-7091-42D6-99D6-8BB0BD860120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD0FEEC4-7091-42D6-99D6-8BB0BD860120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD0FEEC4-7091-42D6-99D6-8BB0BD860120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

@@ -1,0 +1,15 @@
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Infrastructure.deps.json
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Infrastructure.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Infrastructure.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Domain.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Domain.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.csproj.AssemblyReference.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.AssemblyInfoInputs.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.AssemblyInfo.cs
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.csproj.CoreCompileInputs.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.csproj.CopyComplete
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\refint\Livraria.Infrastructure.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\ref\Livraria.Infrastructure.dll

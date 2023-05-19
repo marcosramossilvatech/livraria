@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Livraria.Infrastructure/1.0.0": {
+        "dependencies": {
+          "Livraria.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Livraria.Infrastructure.dll": {}
+        }
+      },
+      "Livraria.Domain/1.0.0": {
+        "runtime": {
+          "Livraria.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Livraria.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Livraria.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

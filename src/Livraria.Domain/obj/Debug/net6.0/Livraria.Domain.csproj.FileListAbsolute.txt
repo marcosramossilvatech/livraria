@@ -1,0 +1,12 @@
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\bin\Debug\net6.0\Livraria.Domain.deps.json
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\bin\Debug\net6.0\Livraria.Domain.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\bin\Debug\net6.0\Livraria.Domain.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.csproj.AssemblyReference.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.AssemblyInfoInputs.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.AssemblyInfo.cs
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.csproj.CoreCompileInputs.cache
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\refint\Livraria.Domain.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\Livraria.Domain.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Domain\obj\Debug\net6.0\ref\Livraria.Domain.dll
