@@ -65,3 +65,5 @@ E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\net6.0\Livraria.Infrastructure.dll
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\net6.0\Livraria.Infrastructure.pdb
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\net6.0\Livraria.Domain.pdb
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\net6.0\AutoMapper.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
