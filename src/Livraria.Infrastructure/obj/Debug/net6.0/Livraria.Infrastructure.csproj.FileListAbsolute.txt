@@ -13,3 +13,5 @@ E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\refint\Livraria.Infrastructure.dll
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.pdb
 E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\ref\Livraria.Infrastructure.dll
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\bin\Debug\net6.0\Livraria.Infrastructure.runtimeconfig.json
+E:\ProjetosPessoas\CadastroDeLivros\backend\Livraria\src\Livraria.Infrastructure\obj\Debug\net6.0\Livraria.Infrastructure.genruntimeconfig.cache
