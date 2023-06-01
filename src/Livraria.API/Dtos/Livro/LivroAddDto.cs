@@ -3,11 +3,8 @@ using System;
 
 namespace Livraria.API.Dtos.Book
 {
-    public class BookEditDto
+    public class LivroAddDto
     {
-        [Key]
-        public int Id { get; set; }
-
         [Required(ErrorMessage = "The field {0} is required")]
         public int CategoryId { get; set; }
 

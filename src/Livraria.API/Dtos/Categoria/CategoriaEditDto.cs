@@ -2,7 +2,7 @@
 
 namespace Livraria.API.Dtos.Category
 {
-    public class CategoryEditDto
+    public class CategoriaEditDto
     {
         [Required(ErrorMessage = "The field {0} is required")]
         public int Id { get; set; }

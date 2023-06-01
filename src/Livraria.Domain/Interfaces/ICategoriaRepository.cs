@@ -2,7 +2,7 @@
 
 namespace Livraria.Domain.Interfaces
 {
-    public interface ICategoryRepository : IRepository<Category>
+    public interface ICategoriaRepository : IRepository<Categoria>
     {
     }
 }

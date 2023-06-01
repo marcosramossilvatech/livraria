@@ -8,30 +8,30 @@ using System.Threading.Tasks;
 
 namespace Livraria.Infrastructure.Repositories
 {
-    public class BookRepository : Repository<Book>, IBookRepository
+    public class LivroRepository : Repository<Livro>, ILivroRepository
     {
-        public BookRepository(LivrariaDbContext context) : base(context) { }
+        public LivroRepository(LivrariaDbContext context) : base(context) { }
 
-        public override async Task<List<Book>> GetAll()
+        public override async Task<List<Livro>> GetAll()
         {
             return await Db.Books.AsNoTracking().Include(b => b.Category)
                 .OrderBy(b => b.Name)
                 .ToListAsync();
         }
 
-        public override async Task<Book> GetById(int id)
+        public override async Task<Livro> GetById(int id)
         {
             return await Db.Books.AsNoTracking().Include(b => b.Category)
                 .Where(b => b.Id == id)
                 .FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<Book>> GetBooksByCategory(int categoryId)
+        public async Task<IEnumerable<Livro>> GetBooksByCategory(int categoryId)
         {
             return await Search(b => b.CategoryId == categoryId);
         }
 
-        public async Task<IEnumerable<Book>> SearchBookWithCategory(string searchedValue)
+        public async Task<IEnumerable<Livro>> SearchBookWithCategory(string searchedValue)
         {
             return await Db.Books.AsNoTracking()
                 .Include(b => b.Category)

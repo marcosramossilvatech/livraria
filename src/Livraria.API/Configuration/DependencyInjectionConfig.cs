@@ -13,11 +13,11 @@ namespace Livraria.API.Configuration
         {
             services.AddScoped<LivrariaDbContext>();
 
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+            services.AddScoped<ILivroRepository, LivroRepository>();
 
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IBookService, BookService>();
+            services.AddScoped<ICategoriaService, CategoriaService>();
+            services.AddScoped<ILivroService, LivroService>();
 
             return services;
         }

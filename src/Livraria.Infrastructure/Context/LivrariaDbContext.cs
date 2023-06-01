@@ -8,8 +8,8 @@ namespace Livraria.Infrastructure.Context
     {
         public LivrariaDbContext(DbContextOptions options) : base(options) { }
 
-        public DbSet<Category> Categories { get; set; }
-        public DbSet<Book> Books { get; set; }
+        public DbSet<Categoria> Categories { get; set; }
+        public DbSet<Livro> Books { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

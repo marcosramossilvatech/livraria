@@ -10,13 +10,13 @@ using System.Threading.Tasks;
 namespace Livraria.API.Controllers
 {
     [Route("api/[controller]")]
-    public class CategoriesController : MainController
+    public class CategoriaController : MainController
     {
-        private readonly ICategoryService _categoryService;
+        private readonly ICategoriaService _categoryService;
         private readonly IMapper _mapper;
 
-        public CategoriesController(IMapper mapper,
-                                    ICategoryService categoryService)
+        public CategoriaController(IMapper mapper,
+                                    ICategoriaService categoryService)
         {
             _mapper = mapper;
             _categoryService = categoryService;
@@ -28,7 +28,7 @@ namespace Livraria.API.Controllers
         {
             var categories = await _categoryService.GetAll();
 
-            return Ok(_mapper.Map<IEnumerable<CategoryResultDto>>(categories));
+            return Ok(_mapper.Map<IEnumerable<CategoriaResultDto>>(categories));
         }
 
         [HttpGet("{id:int}")]
@@ -40,34 +40,34 @@ namespace Livraria.API.Controllers
 
             if (category == null) return NotFound();
 
-            return Ok(_mapper.Map<CategoryResultDto>(category));
+            return Ok(_mapper.Map<CategoriaResultDto>(category));
         }
 
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Add(CategoryAddDto categoryDto)
+        public async Task<IActionResult> Add(CategoriaAddDto categoryDto)
         {
             if (!ModelState.IsValid) return BadRequest();
 
-            var category = _mapper.Map<Category>(categoryDto);
+            var category = _mapper.Map<Categoria>(categoryDto);
             var categoryResult = await _categoryService.Add(category);
 
             if (categoryResult == null) return BadRequest();
 
-            return Ok(_mapper.Map<CategoryResultDto>(categoryResult));
+            return Ok(_mapper.Map<CategoriaResultDto>(categoryResult));
         }
 
         [HttpPut("{id:int}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Update(int id, CategoryEditDto categoryDto)
+        public async Task<IActionResult> Update(int id, CategoriaEditDto categoryDto)
         {
             if (id != categoryDto.Id) return BadRequest();
 
             if (!ModelState.IsValid) return BadRequest();
 
-            await _categoryService.Update(_mapper.Map<Category>(categoryDto));
+            await _categoryService.Update(_mapper.Map<Categoria>(categoryDto));
 
             return Ok(categoryDto);
         }
@@ -88,12 +88,12 @@ namespace Livraria.API.Controllers
         }
 
         [HttpGet]
-        [Route("search/{category}")]
+        [Route("buscar/{categoria}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<ActionResult<List<Category>>> Search(string category)
+        public async Task<ActionResult<List<Categoria>>> Search(string category)
         {
-            var categories = _mapper.Map<List<Category>>(await _categoryService.Search(category));
+            var categories = _mapper.Map<List<Categoria>>(await _categoryService.Search(category));
 
             if (categories == null || categories.Count == 0)
                 return NotFound("None category was founded");

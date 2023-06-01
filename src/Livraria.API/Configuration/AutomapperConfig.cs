@@ -9,12 +9,12 @@ namespace Livraria.API.Configuration
     {
         public AutomapperConfig()
         {
-            CreateMap<Category, CategoryAddDto>().ReverseMap();
-            CreateMap<Category, CategoryEditDto>().ReverseMap();
-            CreateMap<Category, CategoryResultDto>().ReverseMap();
-            CreateMap<Book, BookAddDto>().ReverseMap();
-            CreateMap<Book, BookEditDto>().ReverseMap();
-            CreateMap<Book, BookResultDto>().ReverseMap();
+            CreateMap<Categoria, CategoriaAddDto>().ReverseMap();
+            CreateMap<Categoria, CategoriaEditDto>().ReverseMap();
+            CreateMap<Categoria, CategoriaResultDto>().ReverseMap();
+            CreateMap<Livro, LivroAddDto>().ReverseMap();
+            CreateMap<Livro, LivroEditDto>().ReverseMap();
+            CreateMap<Livro, LivroResultDto>().ReverseMap();
         }
     }
 }

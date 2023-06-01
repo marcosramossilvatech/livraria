@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Livraria.Infrastructure.Mappings
 {
-    public class BookMapping : IEntityTypeConfiguration<Book>
+    public class LivroMapping : IEntityTypeConfiguration<Livro>
     {
-        public void Configure(EntityTypeBuilder<Book> builder)
+        public void Configure(EntityTypeBuilder<Livro> builder)
         {
             builder.HasKey(b => b.Id);
 

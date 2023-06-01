@@ -2,10 +2,10 @@
 
 namespace Livraria.Domain.Models
 {
-    public class Category : Entity
+    public class Categoria : Entity
     {
         public string Name { get; set; }
 
-        public IEnumerable<Book> Books { get; set; }
+        public IEnumerable<Livro> Books { get; set; }
     }
 }

@@ -1,16 +1,16 @@
 ﻿using System;
 
-namespace Livraria.API.Dtos.Book
+namespace Livraria.Domain.Models
 {
-    public class BookResultDto
+    public class Livro : Entity
     {
-        public int Id { get; set; }
-        public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
         public string Name { get; set; }
         public string Author { get; set; }
         public string Description { get; set; }
         public double Value { get; set; }
         public DateTime PublishDate { get; set; }
+        public int CategoryId { get; set; }
+
+        public Categoria Category { get; set; }
     }
 }

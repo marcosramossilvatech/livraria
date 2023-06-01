@@ -7,26 +7,26 @@ using System.Threading.Tasks;
 
 namespace Livraria.Domain.Services
 {
-    public class BookService : IBookService
+    public class LivroService : ILivroService
     {
-        private readonly IBookRepository _bookRepository;
+        private readonly ILivroRepository _bookRepository;
 
-        public BookService(IBookRepository bookRepository)
+        public LivroService(ILivroRepository bookRepository)
         {
             _bookRepository = bookRepository;
         }
 
-        public async Task<IEnumerable<Book>> GetAll()
+        public async Task<IEnumerable<Livro>> GetAll()
         {
             return await _bookRepository.GetAll();
         }
 
-        public async Task<Book> GetById(int id)
+        public async Task<Livro> GetById(int id)
         {
             return await _bookRepository.GetById(id);
         }
 
-        public async Task<Book> Add(Book book)
+        public async Task<Livro> Add(Livro book)
         {
             if (_bookRepository.Search(b => b.Name == book.Name).Result.Any())
                 return null;
@@ -35,7 +35,7 @@ namespace Livraria.Domain.Services
             return book;
         }
 
-        public async Task<Book> Update(Book book)
+        public async Task<Livro> Update(Livro book)
         {
             if (_bookRepository.Search(b => b.Name == book.Name && b.Id != book.Id).Result.Any())
                 return null;
@@ -44,23 +44,23 @@ namespace Livraria.Domain.Services
             return book;
         }
 
-        public async Task<bool> Remove(Book book)
+        public async Task<bool> Remove(Livro book)
         {
             await _bookRepository.Remove(book);
             return true;
         }
 
-        public async Task<IEnumerable<Book>> GetBooksByCategory(int categoryId)
+        public async Task<IEnumerable<Livro>> GetBooksByCategory(int categoryId)
         {
             return await _bookRepository.GetBooksByCategory(categoryId);
         }
 
-        public async Task<IEnumerable<Book>> Search(string bookName)
+        public async Task<IEnumerable<Livro>> Search(string bookName)
         {
             return await _bookRepository.Search(c => c.Name.Contains(bookName));
         }
 
-        public async Task<IEnumerable<Book>> SearchBookWithCategory(string searchedValue)
+        public async Task<IEnumerable<Livro>> SearchBookWithCategory(string searchedValue)
         {
             return await _bookRepository.SearchBookWithCategory(searchedValue);
         }

@@ -4,8 +4,8 @@ using Livraria.Infrastructure.Context;
 
 namespace Livraria.Infrastructure.Repositories
 {
-    public class CategoryRepository : Repository<Category>, ICategoryRepository
+    public class CategoriaRepository : Repository<Categoria>, ICategoriaRepository
     {
-        public CategoryRepository(LivrariaDbContext context) : base(context) { }
+        public CategoriaRepository(LivrariaDbContext context) : base(context) { }
     }
 }

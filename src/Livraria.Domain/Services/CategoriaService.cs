@@ -7,28 +7,28 @@ using System.Linq;
 
 namespace Livraria.Domain.Services
 {
-    public class CategoryService : ICategoryService
+    public class CategoriaService : ICategoriaService
     {
-        private readonly ICategoryRepository _categoryRepository;
-        private readonly IBookService _bookService;
+        private readonly ICategoriaRepository _categoryRepository;
+        private readonly ILivroService _bookService;
 
-        public CategoryService(ICategoryRepository categoryRepository, IBookService bookService)
+        public CategoriaService(ICategoriaRepository categoryRepository, ILivroService bookService)
         {
             _categoryRepository = categoryRepository;
             _bookService = bookService;
         }
 
-        public async Task<IEnumerable<Category>> GetAll()
+        public async Task<IEnumerable<Categoria>> GetAll()
         {
             return await _categoryRepository.GetAll();
         }
 
-        public async Task<Category> GetById(int id)
+        public async Task<Categoria> GetById(int id)
         {
             return await _categoryRepository.GetById(id);
         }
 
-        public async Task<Category> Add(Category category)
+        public async Task<Categoria> Add(Categoria category)
         {
             if (_categoryRepository.Search(c => c.Name == category.Name).Result.Any())
                 return null;
@@ -37,7 +37,7 @@ namespace Livraria.Domain.Services
             return category;
         }
 
-        public async Task<Category> Update(Category category)
+        public async Task<Categoria> Update(Categoria category)
         {
             if (_categoryRepository.Search(c => c.Name == category.Name && c.Id != category.Id).Result.Any())
                 return null;
@@ -46,7 +46,7 @@ namespace Livraria.Domain.Services
             return category;
         }
 
-        public async Task<bool> Remove(Category category)
+        public async Task<bool> Remove(Categoria category)
         {
             var books = await _bookService.GetBooksByCategory(category.Id);
             if (books.Any()) return false;
@@ -55,7 +55,7 @@ namespace Livraria.Domain.Services
             return true;
         }
 
-        public async Task<IEnumerable<Category>> Search(string categoryName)
+        public async Task<IEnumerable<Categoria>> Search(string categoryName)
         {
             return await _categoryRepository.Search(c => c.Name.Contains(categoryName));
         }
